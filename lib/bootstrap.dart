@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
+import 'package:neero_nala_app/app/data/locator_service.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -26,6 +27,8 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   };
 
   Bloc.observer = const AppBlocObserver();
+
+  await setupLocator();
 
   // Add cross-flavor configuration here
 

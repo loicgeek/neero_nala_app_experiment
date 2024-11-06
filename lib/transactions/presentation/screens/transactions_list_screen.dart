@@ -12,6 +12,19 @@ class TransactionsListScreen extends StatefulWidget {
 class _TransactionsListScreenState extends State<TransactionsListScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 70,
+            width: 70,
+            child: Card(
+              child: Text("Bonjour"),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }

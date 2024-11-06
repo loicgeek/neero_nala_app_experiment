@@ -11,7 +11,7 @@ class TransactionsRouterModule extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         CustomRoute<TransactionsListRoute>(
-          path: 'transactions',
+          path: '/',
           page: TransactionsListRoute.page,
           transitionsBuilder: appRouteTransitionBuilder,
         )
