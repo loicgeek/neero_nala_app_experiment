@@ -17,11 +17,11 @@
       ]
     },
     {
-      "name": "Launch staging",
+      "name": "Launch exp",
       "request": "launch",
       "type": "dart",
-      "program": "lib/main_staging.dart",
-      "args": ["--flavor", "staging", "--target", "lib/main_staging.dart"]
+      "program": "lib/main_experiment.dart",
+      "args": ["--flavor", "staging", "--target", "lib/main_experiment.dart"]
     },
     {
       "name": "Launch production",
